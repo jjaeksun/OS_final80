@@ -1,9 +1,9 @@
 from flask import Flask, render_template, request
 from transformers import ViTFeatureExtractor, ViTForImageClassification
 from PIL import Image
-import torch
 
 app = Flask(__name__)
+
 
 model = ViTForImageClassification.from_pretrained("nateraw/vit-age-classifier")
 feature_extractor = ViTFeatureExtractor.from_pretrained("nateraw/vit-age-classifier")
@@ -28,9 +28,11 @@ def predict():
     
     inputs = feature_extractor(images=image, return_tensors="pt")
 
+
     outputs = model(**inputs)
     predicted_class = outputs.logits.argmax(-1).item()
 
+   
     return f"<h1>Predicted Age Group: {predicted_class}</h1>"
 
 if __name__ == "__main__":
