@@ -37,7 +37,7 @@ def predict():
     predicted_class = outputs.logits.argmax(-1).item()
 
     
-    return f"<h1>Predicted Age Group: {predicted_class}</h1>"
+    return f"<h1>예측되는 나이: {predicted_class}</h1>"
 
 if __name__ == "__main__":
     app.run(debug=True)
