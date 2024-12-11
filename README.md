@@ -74,7 +74,13 @@ pip install flask transformers pillow
 ## Example
 
 <p style="font-size:16px;">After uploading a valid image, the app will display a message like:</p>
-<blockquote><code>Predicted Age: 21 - 30 years</code></blockquote>
+<blockquote><code>Predicted Age: 71 - 80 years</code></blockquote>
+
+<a href="https://youtu.be/ABEBDqSEQtI" target="_blank">
+  <img src="https://img.youtube.com/vi/ABEBDqSEQtI/0.jpg" alt="Video Thumbnail" width="320">
+</a>
+
+<img src="https://watermark.lovepik.com/photo/20211207/large/lovepik-elderly-man-smiling-image-picture_501539928.jpg" width="320" height="200">
 
 ## Future Enhancements
 
